@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 import React from "react";
@@ -11,14 +11,14 @@ const HeaderTitle = styled(Typography)`
   font-weight: 700;
   letter-spacing: -0.08em;
   text-transform: uppercase;
-
-  color: #333;
+  line-height: 32px;
+  padding: 32px;
 `;
 
 const Header = () => {
   return (
     <Grid item xs={12}>
-      <HeaderTitle component="h1" variant="h6">
+      <HeaderTitle component="h1" variant="h6" color="primary">
         404 not found
       </HeaderTitle>
     </Grid>
