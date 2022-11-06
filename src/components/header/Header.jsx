@@ -1,27 +1,14 @@
-import { Button, Grid, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Typography } from "@mui/material";
 
 import React from "react";
 
-const HeaderTitle = styled(Typography)`
-  display: flex;
-  justify-content: flex-start;
-
-  font-family: "Inconsolata";
-  font-weight: 700;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
-  line-height: 32px;
-  padding: 32px;
-`;
+//TODO: Refactorizar este código para que utilice un Navbar de Material Ui
 
 const Header = () => {
   return (
-    <Grid item xs={12}>
-      <HeaderTitle component="h1" variant="h6" color="primary">
-        404 not found
-      </HeaderTitle>
-    </Grid>
+    <Typography component="h1" variant="h6" color="primary">
+      404 not found
+    </Typography>
   );
 };
 
