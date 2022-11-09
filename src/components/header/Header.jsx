@@ -1,14 +1,24 @@
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+import { Container } from "@mui/system";
 
 import React from "react";
 
-//TODO: Refactorizar este código para que utilice un Navbar de Material Ui
-
 const Header = () => {
   return (
-    <Typography component="h1" variant="h6" color="primary">
-      404 not found
-    </Typography>
+    <Container>
+      <Grid container>
+        <Grid item xs={12}>
+          <Typography
+            component="h1"
+            variant="h6"
+            color="primary"
+            sx={{ padding: "24px" }}
+          >
+            404 not found
+          </Typography>
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 
