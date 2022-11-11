@@ -12,7 +12,7 @@ const Header = () => {
             component="h1"
             variant="h6"
             color="primary"
-            sx={{ padding: "24px" }}
+            sx={{ padding: "24px", letterSpacing: "-0.08em", fontWeight: 700 }}
           >
             404 not found
           </Typography>
